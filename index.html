@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TRIVIA GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="jubotron text-center">
+            <h1>TRIVIA GAME!!</h1>
+            <p>Test your basketball knowledge</p>
+        <button type="button" class="btn btn-default btn-lg btn-primary startBtn">START</button>
+        <div class="btnContainer"></div>
+        </div>
+
+        <section>
+            <div id="results"></div>
+            <div id="time-left"></div>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <p>Select the right answers></p>
+                <p class="question">1.<bold>How many teams are in the NBA'?</bold></p>
+                <ul class="answers">
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">42</label><br/>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">38</label><br/>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">24</label><br/>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">32</label><br/>
+             </ul>
+
+             <p class="question">2.<bold>Who is the all-time leading scorer in the NBA?</bold></p>
+             <ul class="answers">
+             <input type="radio" name="q2" value="a" id="q1a"><label for="q2a">Magic Johnson</label><br/>
+             <input type="radio" name="q2" value="b" id="q1b"><label for="q2b">Larry Bird</label><br/>
+             <input type="radio" name="q2" value="c" id="q1c"><label for="q2c">Kareem Abdul-Jabbar</label><br/>
+             <input type="radio" name="q2" value="d" id="q1d"><label for="q2d">Michael Jordan</label><br/>
+             </ul>
+
+             <p class="question">3.<bold>Which player scored 100 points in one game?</bold></p>
+             <ul class="answers">
+             <input type="radio" name="q3" value="a" id="q1a"><label for="q3a">Kobe Bryant</label><br/>
+             <input type="radio" name="q3" value="b" id="q1b"><label for="q3b">Labron James</label><br/>
+             <input type="radio" name="q3" value="c" id="q1c"><label for="q3c">Wilt Chamberlin</label><br/>
+             <input type="radio" name="q3" value="d" id="q1d"><label for="q3d">Dr J</label><br/>
+             </ul>
+
+             <p class="question">4.<bold>Who has scored the most 3-pointers in the NBA?</bold></p>
+             <ul class="answers">
+             <input type="radio" name="q4" value="a" id="q1a"><label for="q4a">Reggie Miller</label><br/>
+             <input type="radio" name="q4" value="b" id="q1b"><label for="q4b">Ray Allen</label><br/>
+             <input type="radio" name="q4" value="c" id="q1c"><label for="q4c">Stephen Curry</label><br/>
+             <input type="radio" name="q4" value="d" id="q1d"><label for="q4d">Larry Bird</label><br/>
+             </ul>
+
+             <p class="question">5.<bold>Who is the top player in the NBA today?</bold></p>
+             <ul class="answers">
+             <input type="radio" name="q5" value="a" id="q1a"><label for="q5a">James Harden</label><br/>
+             <input type="radio" name="q5" value="b" id="q1b"><label for="q5b">Russell Westbrook</label><br/>
+             <input type="radio" name="q5" value="c" id="q1c"><label for="q5c">Labron James</label><br/>
+             <input type="radio" name="q5" value="d" id="q1d"><label for="q5d">Kevin Durant</label><br/>
+             </ul>
+             <br><br>
+             <div id="show-number"></div>
+             <input type="submit" value="submit Answers">
+             </form>
+             </section>
+       </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+
+
+
+</body>
+</html>

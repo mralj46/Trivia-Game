@@ -1,0 +1,46 @@
+body {
+    background-image: url(../img/BasketballBackground1.jpg);
+    color:#fff;
+    font-family:'Ariel', sans-serif;
+    font-size: 14px;
+}
+
+.text-center {
+    color:#fff;
+}
+
+#container {
+    width: 60%;
+    background: #199fdb;
+    color: #fff;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+}
+
+section{
+    min-height: 400px;
+    color:#fff;
+}
+
+input[type='submit']{
+    background: #f06226;
+    border: 0;
+    color: #fff;
+    padding:10px 15px;
+    cursor: pointer;
+}
+
+#results h3{
+    background: #199fbd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#results span{
+    color:#000;
+    font-weight:bold;
+}
+
+
+
