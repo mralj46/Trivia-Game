@@ -17,7 +17,7 @@ function timeCount()
 {
     time = 30;
     interval =setInterval(timeRemaining, 1000);
-    $('.btnCountainer').append('<div class="timeRem">'
+    $('.btnContainer').append('<div class="timeRem">'
         + 'Time Remaining:' +
         '<div class="timerCountDown"></div>' +
     '</div>');
@@ -26,8 +26,10 @@ function timeCount()
 function timeRemaining(){
     time --;
     $('.timerCountDown').text(time + 'seconds');
-    // if(time === 0)
-    // {
+     if(time === 0)
+        {clearInterval(interval);
+            submitAnswer();}
+            
     // var questions ={
     // quest1: ['There are 32 teams in the NBA', "t"], 
     // quest2: ['Michael Jordan is the all-time NBA scorer', "f"],
@@ -50,7 +52,7 @@ for(i = 1; i <= total;i++);{
          alrert('You missed question + i');
         return false;
     }
-     
+     console.log(i);
 }
 
 var answer = ["d","c","c","b","c"];
